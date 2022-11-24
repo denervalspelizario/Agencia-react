@@ -4,10 +4,10 @@ function Footer() {
   
 
   return (
-    <div className="App">
-      
+    <footer className="footer__container">
+      <h1>footer</h1>
         
-    </div>
+    </footer>
   )
 }
 

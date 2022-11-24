@@ -4,10 +4,10 @@ function Experiencias() {
   
 
   return (
-    <div className="App">
-      
+    <article className="exp__container">
+      <h1>experiencias</h1>
         
-    </div>
+    </article>
   )
 }
 

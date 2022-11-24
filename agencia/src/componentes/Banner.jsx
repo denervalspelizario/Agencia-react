@@ -4,10 +4,10 @@ function Banner() {
   
 
   return (
-    <div className="App">
-      
+    <asside className="banner__container">
+      <h1>banner</h1>
         
-    </div>
+    </asside>
   )
 }
 

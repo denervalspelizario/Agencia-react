@@ -4,10 +4,11 @@ function Card() {
   
 
   return (
-    <div className="App">
+    <section className="card__container">
+      <h1>card</h1>
       
         
-    </div>
+    </section>
   )
 }
 
