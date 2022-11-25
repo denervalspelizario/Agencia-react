@@ -1,13 +1,13 @@
-import '../styles/componentes/Banner.sass'
-
-function Banner() {
+import '../styles/componentes/Banner.sass';
+import BannerImage from '/image/banner.png';
+const Banner = () => {
   
 
   return (
-    <asside className="banner__container">
-      <h1>banner</h1>
+    <section className="banner__container">
+      <img src={BannerImage} alt="Colaborador da Agencia"  title='Agencia de brading e design'/>
         
-    </asside>
+    </section>
   )
 }
 
