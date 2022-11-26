@@ -1,6 +1,7 @@
 import Moon from '/image/moon.png';
 import Sun from '/image/sun.png';
 import { useState } from 'react';
+import '../styles/componentes/Theme.sass'
 
 const Theme = () => {
 

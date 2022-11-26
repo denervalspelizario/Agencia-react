@@ -2,14 +2,11 @@ import '../styles/componentes/Header.sass';
 import Logo from '/image/logo.png';
 
 
-function Topo() {
-  
-
+function Header() {
   return (
     <header className="header">
-        <div className='header__container'>
-          <img src={Logo} alt="logo da agencia" />
-      
+      <div className='header__container'>
+        <img src={Logo} alt="logo da agencia" />
         <nav>
           <ul>
             <li><a href="#experiencias">Sobre</a></li>
@@ -20,6 +17,6 @@ function Topo() {
       </div>       
     </header>
   )
-}
+};
 
-export default Topo
+export default Header;
