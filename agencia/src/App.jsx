@@ -1,16 +1,18 @@
 
 import './styles/App.sass';
-import Topo from './componentes/Topo';
+import Header from './componentes/Header';
 import Banner from './componentes/Banner';
 import Experiencias from './componentes/Experiencias';
 import Footer from './componentes/Footer';
+import Theme from './componentes/Theme';
 
 function App() {
   
 
   return (
     <section className="App">
-      <Topo />
+      <Theme />
+      <Header />
       <Banner />
       <Experiencias />
       <Footer />
