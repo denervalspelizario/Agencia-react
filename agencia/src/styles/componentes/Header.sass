@@ -1,21 +1,49 @@
-
+@use '../mixins'
+@use '../variables'
 
 .header__container
     margin: 0 auto
     width: 1040px
     display: flex    
     justify-content: space-between
+    @include mixins.mobile
+        width: 90vw
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    @include mixins.tablet
+        width: 90vw
+    @include mixins.notepad
+        width: 90vw
 
+    .header__logo
+        width: 50px
+        @include mixins.mobile
+            padding-bottom: 1rem 
 
 
     nav
+        
+        @include mixins.mobile
+            border-top: 1px solid variables.$lightTheme-dark
+            padding-top: 1rem 
+            width: 100%
+            
 
         ul
             display: flex
-            
+            @include mixins.mobile
+                justify-content: space-between
+                align-items: center
             li
                 margin: 0 1rem
                 list-style: none
 
                 a
                     text-decoration: none
+                    color: variables.$lightTheme-banner
+                    border-bottom: 3px solid transparent
+                    transition: .5s
+
+                    &:hover
+                        @include mixins.hover-text
