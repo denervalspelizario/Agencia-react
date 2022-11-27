@@ -1,8 +1,35 @@
 @use '../mixins'
 @use '../variables'
 
-button
-    width: 50px
+.theme__container
+    display: flex
+    justify-content: right
+    margin: 0.5rem 6%
 
-    img
-        width: 40px    
+
+
+    button
+        width: 1.9rem
+        height: 1.9rem    
+        border: 2px solid variables.$lightTheme-gray
+        border-radius: 50px
+        background-color: variables.$lightTheme-light
+        
+
+
+        @include mixins.mobile
+            width: 2.5rem
+            height: 2.5rem    
+            border: 2px solid variables.$lightTheme-gray
+            border-radius: 50px
+            background-color: variables.$lightTheme-light
+        
+
+
+        img
+            margin-top: 0.3rem
+            width: 18px 
+
+            @include mixins.mobile
+                margin-top: 0.3rem
+                width: 25px    

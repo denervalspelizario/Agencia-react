@@ -12,10 +12,10 @@ const Theme = () => {
     }
 
     return (    
-        <div>
+        <div className='theme__container'>
             <button onClick={alterTheme}  type='submit' className={darkMode ? 'dark__mode' : 'light__mode' }>
                 <img src={darkMode ? Moon : Sun} alt="" className='image__button'/>
-                {darkMode ? 'Dark' : 'light'}
+                
             </button> 
         </div>
 
