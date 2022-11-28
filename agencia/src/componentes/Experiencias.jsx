@@ -7,7 +7,8 @@ function Experiencias() {
   return (
     <article className="exp__container">
       <h2>Experiências de Trabalho</h2>
-      <p>Há mais de 10 anos no mercado de Branding, Design Gráfico, Criação de Sites e Marketing Digital, nos empenhamos diariamente para entregar resultados que tragam impacto aos nossos clientes.</p>
+      <div className='exp__border'></div>
+      <p className='exp__text'>Há mais de 10 anos no mercado de Branding, Design Gráfico, Criação de Sites e Marketing Digital, nos empenhamos diariamente para entregar resultados que tragam impacto aos nossos clientes.</p>
       <Card 
         textUp="Junho 2012 - 2016"
         titulo="Web Designer"
