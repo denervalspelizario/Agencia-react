@@ -1,0 +1,50 @@
+@use '../mixins'
+@use '../variables'
+
+.banner__container
+    display: flex
+
+    img
+        width: 50vw
+        @include mixins.tablet
+            display: none
+
+        @include mixins.mobile
+            display: none    
+
+
+
+    .banner__text
+        background-color: variables.$lightTheme-banner-light
+        width: 50vw
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: left    
+        padding-left: 1rem
+        @include mixins.tablet
+            width: 100vw
+            height: 600px
+
+        @include mixins.mobile
+            width: 100vw  
+            height: 600px
+
+        p
+            text-transform: uppercase
+            font-size: 0.6rem
+            letter-spacing: 0.5rem
+            @include mixins.mobile
+                font-size: 0.5rem
+                letter-spacing: 0.4rem
+            
+        h1
+            
+            font-size: 2rem    
+            color: variables.$lightTheme-banner
+            @include mixins.mobile
+                font-size: 1.7rem
+
+            span
+                font-weight: 400
+                text-transform: uppercase
