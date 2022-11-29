@@ -1,0 +1,40 @@
+@use '../mixins'
+@use '../variables'
+
+.card
+    display: flex
+    flex-direction: column
+    text-align: center
+    border: 1px solid variables.$darkTheme-gray
+    padding: 1rem 
+      
+
+    
+    .card__inside
+        width: 250px
+        @include mixins.tablet
+            width: 85vw
+            text-align: left
+        @include mixins.mobile
+            width: 85vw  
+            text-align: left  
+
+        .card__text--up
+            width: 250px
+            @include mixins.tablet
+                width: 85vw
+                text-align: left
+            @include mixins.mobile
+                width: 85vw 
+                text-align: left
+
+        .card__text
+            font-size: 0.9rem
+            width: 250px
+            @include mixins.tablet
+                width: 85vw
+                text-align: left
+            @include mixins.mobile
+                width: 85vw   
+                text-align: left  
+                

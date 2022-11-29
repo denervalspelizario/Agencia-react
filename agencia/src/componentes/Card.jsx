@@ -2,8 +2,8 @@ import '../styles/componentes/Card.sass'
 
 function Card( props) {  
   return (
-    <section className="card__container">
-      <div className='card__cards'>
+    <section className="card">
+      <div className='card__inside'>
         <p className='card__text--up'>
           {props.textUp}
         </p>
