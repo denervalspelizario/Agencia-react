@@ -14,7 +14,7 @@ function Footer() {
   return (
     <footer >
       <div className="footer__container">
-        <img src={Logo} alt="Logo da Agencia M dourado" />
+        <img src={Logo} alt="Logo da Agencia M dourado"  className='footer__logo'/>
         <p>
             Ajudamos a criar uma personalidade digital construindo sua marca no ambiente online ultilizando estratégias,
             ferramentas e tecnologias personalizadas
@@ -22,37 +22,37 @@ function Footer() {
         <ul>
           <li>
             <a href="#">
-              <img src={Facebook} alt="logo facebook" />
+              <img src={Facebook} alt="logo facebook" className='footer__media' />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Twitter} alt="logo Twitter" />
+              <img src={Twitter} alt="logo Twitter" className='footer__media' />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Linkedin} alt="logo linkedin" />
+              <img src={Linkedin} alt="logo linkedin" className='footer__media' />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Dribble} alt="logo dribble" />
+              <img src={Dribble} alt="logo dribble" className='footer__media' />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Behance} alt="logo behance" />
+              <img src={Behance} alt="logo behance" className='footer__media' />
             </a>
           </li>
           <li>
             <a href="#">
-              <img src={Google} alt="logo google plus" />
+              <img src={Google} alt="logo google plus" className='footer__media'  />
             </a>
           </li>
         </ul>
         <p className='footer__copy'>
-          Copyright 2022 DS Pelizario
+          Copyright 2022 <span>DS Pelizario</span> 
         </p>
       </div>
     </footer>

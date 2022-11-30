@@ -1,0 +1,42 @@
+@use '../mixins'
+@use '../variables'
+    
+    
+.footer__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .footer__logo
+        width: 50px
+        margin: 2rem
+
+    p
+        @include mixins.text-style
+
+        @include mixins.tablet
+            width: 90vw
+        @include mixins.mobile
+            width: 90vw    
+
+        span
+            color: variables.$darkTheme-yellow    
+
+    ul
+        display: flex
+        li
+            list-style: none
+            a
+
+                .footer__media 
+                    width: 50px
+                    margin: 1rem 0.5rem
+
+                    &:hover
+                        @include mixins.hover-media
+
+                    @include mixins.tablet
+                        width: 40px
+                    @include mixins.mobile
+                        width: 40px     
