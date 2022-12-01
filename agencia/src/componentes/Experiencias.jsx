@@ -1,11 +1,11 @@
 import '../styles/componentes/Experiencias.sass'
 import Card from '../componentes/Card'
 
-function Experiencias() {
+function Experiencias(props) {
   
 
   return (
-    <article className="exp__container">
+    <article id="exp__container"  className={props.darkMode ? 'exp__dark__mode' : 'exp__light__mode'}>
       <h2>Experiências de Trabalho</h2>
       <div className='exp__border'></div>
       <p className='exp__text'>Há mais de 10 anos no mercado de Branding, Design Gráfico, Criação de Sites e Marketing Digital, nos empenhamos diariamente para entregar resultados que tragam impacto aos nossos clientes.</p>
