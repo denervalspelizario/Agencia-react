@@ -1,8 +1,19 @@
 @use '../mixins'
 @use '../variables'
+
+.footer__dark__mode
+    background-color: variables.$darkTheme-dark 
+
+    p
+        color: variables.$darkTheme-gray
+        
+
+.footer__light__mode 
+    background-color: variables.$lightTheme-banner-light 
+    p
+        color: variables.$lightTheme-gray        
     
-    
-.footer__container
+#footer__container
     display: flex
     flex-direction: column
     justify-content: center

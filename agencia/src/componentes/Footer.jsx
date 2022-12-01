@@ -8,12 +8,12 @@ import Behance from '/image/behance.png'
 import Google from '/image/google-plus.png'
 
 
-function Footer() {
+function Footer(props) {
   
 
   return (
-    <footer >
-      <div className="footer__container">
+    <footer  >
+      <div id="footer__container"  className={props.darkMode ? 'footer__dark__mode' : 'footer__light__mode'}>
         <img src={Logo} alt="Logo da Agencia M dourado"  className='footer__logo'/>
         <p>
             Ajudamos a criar uma personalidade digital construindo sua marca no ambiente online ultilizando estratégias,
