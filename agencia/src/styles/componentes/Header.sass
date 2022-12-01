@@ -1,7 +1,34 @@
 @use '../mixins'
 @use '../variables'
 
-.header__container
+
+
+.header__dark__mode
+    background-color: variables.$darkTheme-dark  
+    a
+        color: variables.$darkTheme-gray   
+        border-bottom: 3px solid transparent
+
+        &:hover
+            border-bottom: 3px solid variables.$darkTheme-gray
+            transition: 0.7s
+               
+        
+        
+
+
+.header__light__mode
+    background-color: variables.$lightTheme-banner-light 
+    a
+        color: variables.$lightTheme-banner
+        border-bottom: 3px solid transparent
+
+        &:hover
+            border-bottom: 3px solid variables.$lightTheme-banner
+            transition: 0.7s
+        
+
+#header__container
     margin: 0 auto
     width: 1040px
     display: flex    
@@ -16,14 +43,20 @@
     @include mixins.notepad
         width: 90vw
 
+
+
     .header__logo
         width: 50px
+        padding-bottom: 1rem
         @include mixins.mobile
             padding-bottom: 1rem 
         @include mixins.tablet
             padding-bottom: 1rem     
 
 
+
+  
+    
     nav
         
         @include mixins.mobile
@@ -44,11 +77,43 @@
 
                 a
                     text-decoration: none
-                    color: variables.$lightTheme-banner
-                    border-bottom: 3px solid transparent
-                    transition: .5s
+                    
+                    
 
-                    &:hover
-                        @include mixins.hover-text
+                   
+                   
         
-            
+   
+
+.button__container
+    display: flex
+    justify-content: right
+    margin: 0 6%
+    padding: 1rem 0
+
+    button
+        width: 1.9rem
+        height: 1.9rem    
+        border: 2px solid variables.$lightTheme-gray
+        border-radius: 50px
+        background-color: variables.$lightTheme-light
+    
+        
+
+
+        @include mixins.mobile
+            width: 2.5rem
+            height: 2.5rem    
+            border: 2px solid variables.$lightTheme-gray
+            border-radius: 50px
+            background-color: variables.$lightTheme-light
+        
+
+
+        img
+            margin-top: 0.3rem
+            width: 18px 
+
+            @include mixins.mobile
+                margin-top: 0.3rem
+                width: 25px                
